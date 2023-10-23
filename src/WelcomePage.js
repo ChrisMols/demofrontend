@@ -72,7 +72,7 @@ function WelcomePage() {
       {/* Footer */}
       <Paper sx={{ backgroundColor: '#333', color: 'white', py: 5, textAlign: 'center', position: 'fixed', bottom: 0, left: 0, right: 0 }}>
         <Typography variant="body2">
-          &copy; {new Date().getFullYear()} Your Company Name
+          &copy; {new Date().getFullYear()} Naturborgarmärket
         </Typography>
       </Paper>
     </div>

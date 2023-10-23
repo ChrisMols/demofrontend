@@ -9,11 +9,12 @@ import IconButton from '@mui/material/IconButton';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const sectionStyle = {
-  padding: '2rem',
+  padding: '2.5rem',
   background: '#f8f8f8',
   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   borderRadius: '8px',
-  marginBottom: '2rem',
+  margin: '1rem auto',
+  maxWidth: '1000px'
 };
 
 const footerStyle = {
@@ -61,11 +62,11 @@ function HomePage() {
       {/* Main Content Sections */}
       <section style={sectionStyle}>
         <Typography variant="h4">Naturområde</Typography>
-        <Typography variant="body1">
+        <Typography variant="body1" style={{ marginTop: '0.5rem' }}>
           Gå vidare för att välja naturområde
         </Typography>
         <Link to="/select-nature-area" style={{ textDecoration: 'none' }}>
-          <Button variant="outlined" color="primary">
+          <Button variant="outlined" color="primary" style={{ marginTop: '1rem'}}>
             Start
           </Button>
         </Link>
@@ -73,11 +74,11 @@ function HomePage() {
 
       <section style={sectionStyle}>
         <Typography variant="h4">Information om arter</Typography>
-        <Typography variant="body1">
+        <Typography variant="body1" style={{ marginTop: '0.5rem' }}>
           Här kan du läsa på om olika arter som finns i olika naturområden. Se bilder och beskrivningar.
         </Typography>
         <Link to="/species-information" style={{ textDecoration: 'none' }}>
-          <Button variant="outlined" color="primary">
+          <Button variant="outlined" color="primary" style={{ marginTop: '1rem'}}>
             Utforska
           </Button>
         </Link>
@@ -85,11 +86,11 @@ function HomePage() {
 
       <section style={sectionStyle}>
         <Typography variant="h4">Om Naturborgarmärket</Typography>
-        <Typography variant="body1">
+        <Typography variant="body1" style={{ marginTop: '0.5rem' }}>
           Läs mer om Naturborgarmärket, allemansrättenoch se vem som stödjer vår utveckling.
         </Typography>
-        <Link to="/about-us" style={{ textDecoration: 'none' }}>
-          <Button variant="outlined" color="primary">
+        <Link to="/about-us" style={{ textDecoration: 'none'}}>
+          <Button variant="outlined" color="primary" style={{ marginTop: '1rem'}}>
             Läs mer
           </Button>
         </Link>
@@ -98,7 +99,7 @@ function HomePage() {
       {/* Footer Section */}
       <div style={footerStyle}>
         <Typography variant="body2">
-          &copy; {new Date().getFullYear()} Your Company Name
+          &copy; {new Date().getFullYear()} Naturborgarmärket
         </Typography>
       </div>
 
